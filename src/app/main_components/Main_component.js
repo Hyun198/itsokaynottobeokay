@@ -6,7 +6,7 @@ async function fetchDramaData() {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NmRmOTBiMjk1NDQ4YWIyNDJmNzcyMTY2MzVjZjRjMSIsIm5iZiI6MTcyOTQ3MzI4MS44MDEyNTYsInN1YiI6IjY0OTEzYWEzYzJmZjNkMDBlMmUxZWY2YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.z-GAcnjBlVtZ2LETEDeTet_AhTygNf_HnRJ93iCHSkM',
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_API_KEY}`,
         },
     };
 
@@ -21,7 +21,7 @@ async function fetchCastData(dramaId) {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NmRmOTBiMjk1NDQ4YWIyNDJmNzcyMTY2MzVjZjRjMSIsIm5iZiI6MTcyOTQ3MzI4MS44MDEyNTYsInN1YiI6IjY0OTEzYWEzYzJmZjNkMDBlMmUxZWY2YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.z-GAcnjBlVtZ2LETEDeTet_AhTygNf_HnRJ93iCHSkM',
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_API_KEY}`,
         },
     };
 
@@ -29,6 +29,8 @@ async function fetchCastData(dramaId) {
     const credits_data = await credits_response.json();
     return credits_data.cast;
 }
+
+
 
 export default async function MainComponent() {
     const infos = await fetchDramaData();
@@ -38,9 +40,10 @@ export default async function MainComponent() {
         <>
             <div className="main-info">
                 <h2>{infos.original_name}</h2>
+                <div className="detail-button">Detail</div>
                 <p>{(infos.overview).split('. ').map((sentence, index) => (
                     <span key={index}>
-                        {sentence}.
+                        {sentence}
                         <br />
                     </span>))}
                 </p>
