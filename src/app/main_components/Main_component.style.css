@@ -1,0 +1,34 @@
+.main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info h2 {
+    text-align: center;
+}
+
+.main-info p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.cast-info {
+    text-align: center;
+}
+
+.cast-info ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.cast-info ul li {
+    text-align: center;
+    margin: 0 5px;
+}
+
+.cast-info ul li img {
+    border-radius: 10px;
+}
