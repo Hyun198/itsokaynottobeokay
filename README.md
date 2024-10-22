@@ -49,10 +49,6 @@ Removed sections:
   - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
 
-# :notebook_with_decorative_cover: Table of Contents
-
-<!-- About the Project -->
-
 ## :star2: About the Project
 
 <div> 
