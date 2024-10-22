@@ -30,5 +30,21 @@
       "quote": "혹시 운명을 믿어요? 운명이 뭐 별건가. 이렇게 필요할 때, 나 앞에 나타나주면 그게 운명이지. 니가 내 안전핀 해라. 내가 펑 안 터지게 꽉 붙잡고 있으라고.",
       "character": "고문영"
     }
+  ],
+  "locations": [
+    {
+      "location_name": "괜찮은 병원",
+      "description": "드라마에서 자주 등장한 곳으로, 문강태가 근무하는 괜찮은 병원",
+      "id": 1,
+      "location_address": "강원 고성군 토성면 아야진리 226",
+      "location_img": "https://lh3.googleusercontent.com/p/AF1QipNd732_5pRpk_F7Ps53mOWkB9Q0FVPqqlB1mAkq=s680-w680-h510"
+    },
+    {
+      "location_name": "저주받은성",
+      "location_address": "강원도 원주 사나다 카페",
+      "description": "고문영이 살던 장소 ",
+      "location_img": "https://mblogthumb-phinf.pstatic.net/MjAyMDA4MDNfMTIg/MDAxNTk2NDYzNjI5MzIw.kLgj4oetZ5-x-_7nqUYq2pMJEX5GAIoIajqWOK5jH-gg.Jr9zAn0-vchl9pk1eigFwRKG_VNVGPKIeODGwDV4lfsg.JPEG.amlee74/5I6A0826.JPG?type=w800",
+      "id": 2
+    }
   ]
 }

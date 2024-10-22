@@ -23,6 +23,11 @@
     border-radius: 10px;
     box-shadow: 2px 1px 3px black;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.main-info .detail-button:hover {
+    background-color: bisque;
 }
 
 .cast-info {

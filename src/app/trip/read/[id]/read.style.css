@@ -1,0 +1,10 @@
+.location-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-detail img {
+    width: 500px;
+    height: 500px;
+}
