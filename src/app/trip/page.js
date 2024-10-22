@@ -17,19 +17,7 @@ export default function Trip() {
         setLocations(data);
     }
 
-    /* const deleteLocation = (id) => {
-        const options = {
-            method: "DELETE"
-        };
-        fetch(process.env.NEXT_PUBLIC_DB_API_URL + `locations/${id}`, options)
-            .then(response => response.json())
-            .then(result => {
-                setLocations(locations.filter(location => location.id !== id));
-                router.refresh();
-                router.push("/trip");
 
-            })
-    } */
 
     return (
         <>

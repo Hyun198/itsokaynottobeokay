@@ -1,8 +1,11 @@
 import './read.style.css'
-
+import { Delete } from '../../delete';
 export default async function Read(props) {
     const response = await fetch(process.env.NEXT_PUBLIC_DB_API_URL + `locations/${props.params.id}`);
     const location = await response.json();
+
+
+
     return (
         <>
             <div className="location-detail">
@@ -13,6 +16,7 @@ export default async function Read(props) {
                 <div>
                     길찾기
                 </div>
+                <Delete />
             </div>
 
         </>

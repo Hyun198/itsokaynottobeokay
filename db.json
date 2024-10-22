@@ -33,18 +33,25 @@
   ],
   "locations": [
     {
-      "location_name": "괜찮은 병원",
-      "description": "드라마에서 자주 등장한 곳으로, 문강태가 근무하는 괜찮은 병원",
-      "id": 1,
-      "location_address": "강원 고성군 토성면 아야진리 226",
-      "location_img": "https://lh3.googleusercontent.com/p/AF1QipNd732_5pRpk_F7Ps53mOWkB9Q0FVPqqlB1mAkq=s680-w680-h510"
-    },
-    {
       "location_name": "저주받은성",
       "location_address": "강원도 원주 사나다 카페",
       "description": "고문영이 살던 장소 ",
       "location_img": "https://mblogthumb-phinf.pstatic.net/MjAyMDA4MDNfMTIg/MDAxNTk2NDYzNjI5MzIw.kLgj4oetZ5-x-_7nqUYq2pMJEX5GAIoIajqWOK5jH-gg.Jr9zAn0-vchl9pk1eigFwRKG_VNVGPKIeODGwDV4lfsg.JPEG.amlee74/5I6A0826.JPG?type=w800",
       "id": 2
+    },
+    {
+      "location_name": "괜찮은 병원 (시크릿블루 카페)",
+      "location_address": "강원 고성군 토성면 아야진북길 31-6",
+      "description": "강태의 직장, 괜찮은 병원",
+      "location_img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230501_167%2F1682944675876Vjnal_JPEG%2F783BAEF1-F73F-4F1F-BA03-EAB1635EEB14.jpeg",
+      "id": 3
+    },
+    {
+      "location_name": "강태,문영 데이트 장소",
+      "location_address": "경기 양주시 옥정동로7길 110",
+      "description": "강태,문영 데이트 장소, 드라마 7회에서 나왔던 장소",
+      "location_img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDA5MjlfNTUg%2FMDAxNzI3NjE0MDUyMDIz.16kxdUxFZ2sfyIWLu6Qwc4rsBt2W12N-2Cipt74UEXAg.1wT4Srzs4jHiHnP9SCfm_AKjHp7zpqZiAGmKQvzETX8g.JPEG%2F1000004341.jpg.jpg%3Ftype%3Dw1500_60_sharpen",
+      "id": 4
     }
   ]
 }

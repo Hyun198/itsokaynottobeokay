@@ -1,29 +1,32 @@
 .location-create {
-    display: flex;
     background-color: antiquewhite;
-    justify-content: center;
     height: 500px;
+    text-align: center;
 }
 
 
 
 .location-create form {
+    margin: auto;
     width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .location-create form input {
     width: 100%;
+    padding: 20px;
     border-radius: 10px;
     border: none;
+    margin: 10px 0;
 }
 
 .location-create form textarea {
     resize: none;
     width: 100%;
-    height: 50px;
+    padding: 20px;
     border-radius: 10px;
     border: none;
 }
@@ -41,5 +44,5 @@ textarea::placeholder {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: aqua;
+    background-color: darkslategray;
 }
