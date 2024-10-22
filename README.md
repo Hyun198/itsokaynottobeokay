@@ -32,7 +32,6 @@ Removed sections:
       - 사용자 경험(UI/UX) 개선을 위해 그리드 레이아웃 및 반응형 디자인 적용
     </ul>
 
-
   </p>
   <p>
     해당 프로젝트 목적은 드라마 팬들에게 유용한 정보를 제공하는데 초점을 맞췄고, 향후 사용자 간의
@@ -58,8 +57,8 @@ Removed sections:
 ## :star2: About the Project
 
 <div> 
-  <img style="width:200px; height: 150px;" src="./public/main.png"/>
-  <img style="width:200px; height: 150px;"src="./public/main2.png"/>
+  <img style="width:300px; height: 350px;" src="./public/main.png"/>
+  <img style="width:300px; height: 350px;"src="./public/main2.png"/>
 </div>
 
 <!-- TechStack -->
