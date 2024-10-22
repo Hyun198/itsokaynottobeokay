@@ -19,29 +19,47 @@ Removed sections:
 <div align="center">
 
   <h1>It's okay to be Not okay</h1>
+  <h2>사이코지만 괜찮아</h2>
   
   <p>
-    사이코지만 괜찮아 홍보 사이트
+    Next.js를 이용한 첫 프로젝트 입니다.
+    <ul>
+      - Server Component와 Client Component의 이해
+      - App Router를 이용한 경로 처리 
+      - Sever 와 Client 단에서 API와의 비동기 통신 경험
+      - 장소 데이터를 입력하고 관리하는 CRUD 기능 구현
+      - RESTful API 구현
+      - 사용자 경험(UI/UX) 개선을 위해 그리드 레이아웃 및 반응형 디자인 적용
+    </ul>
+
+
+  </p>
+  <p>
+    해당 프로젝트 목적은 드라마 팬들에게 유용한 정보를 제공하는데 초점을 맞췄고, 향후 사용자 간의
+    장소 공유 기능, 가능하다면 커뮤니티 페이지로도 발전시켜볼 계획입니다.
+
   </p>
 
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
-
+<div>
 - [About the Project](#star2-about-the-project)
 - [Tech Stack](#space_invader-tech-stack)
 - [Features](#dart-features)
 - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
 
-- [Acknowledgements](#gem-acknowledgements)
+</div>
+
+# :notebook_with_decorative_cover: Table of Contents
 
 <!-- About the Project -->
 
 ## :star2: About the Project
 
 <div> 
-  
+  <img style="width:200px; height: 150px;" src="./public/main.png"/>
+  <img style="width:200px; height: 150px;"src="./public/main2.png"/>
 </div>
 
 <!-- TechStack -->
@@ -49,8 +67,9 @@ Removed sections:
 ### :space_invader: Tech Stack
 
 Client
-
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react" />
 Server
+<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next-js"/>
 
 <!-- Features -->
 
