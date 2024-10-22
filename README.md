@@ -103,8 +103,10 @@ To run this project, you will need to add the following environment variables to
 
 development server
 `npm run dev `
+<br>
 build
 `npm run build`
+<br>
 start
 `npm run start`
 
