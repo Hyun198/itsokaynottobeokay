@@ -24,21 +24,14 @@ Removed sections:
     사이코지만 괜찮아 홍보 사이트
   </p>
 
-<!-- Badges -->
-<p>
-
-</p>
-
-<br />
-
 <!-- Table of Contents -->
 
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  - [Tech Stack](#space_invader-tech-stack)
-  - [Features](#dart-features)
-  - [Environment Variables](#key-environment-variables)
+- [Tech Stack](#space_invader-tech-stack)
+- [Features](#dart-features)
+- [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
 
 - [Acknowledgements](#gem-acknowledgements)
