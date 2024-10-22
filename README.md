@@ -41,39 +41,23 @@ Removed sections:
   - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
 
-  - [Prerequisites](#bangbang-prerequisites)
-  - [Installation](#gear-installation)
-  - [Run Locally](#running-run-locally)
-
 - [Acknowledgements](#gem-acknowledgements)
 
 <!-- About the Project -->
 
 ## :star2: About the Project
 
-<div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+<div> 
+  
 </div>
 
 <!-- TechStack -->
 
 ### :space_invader: Tech Stack
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+Client
 
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-  </ul>
-</details>
+Server
 
 <!-- Features -->
 
@@ -85,25 +69,15 @@ Removed sections:
 
 To run this project, you will need to add the following environment variables to your .env file
 
+example file => .env.local.example
+
 <!-- Getting Started -->
 
 ## :toolbox: Getting Started
 
-    npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    # or
-    bun dev
-
-<!-- Acknowledgments -->
-
-## :gem: Acknowledgements
-
-Use this section to mention useful resources and libraries that you have used in your projects.
-
-- [Shields.io](https://shields.io/)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-- [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
-- [Readme Template](https://github.com/othneildrew/Best-README-Template)
+development server
+npm run dev
+build
+npm run build
+start
+npm run start
