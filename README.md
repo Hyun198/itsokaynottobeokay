@@ -101,11 +101,11 @@ To run this project, you will need to add the following environment variables to
 
 ## :toolbox: Getting Started
 
-development server
-npm run dev
-build
-npm run build
-start
-npm run start
+> development server
+> `npm run dev `
+> build
+> `npm run build`
+> start
+> `npm run start`
 
 </div>
