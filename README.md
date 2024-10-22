@@ -41,14 +41,13 @@ Removed sections:
 
 <!-- Table of Contents -->
 
-<div>
-- [About the Project](#star2-about-the-project)
-- [Tech Stack](#space_invader-tech-stack)
-- [Features](#dart-features)
-- [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
+# :notebook_with_decorative_cover: Table of Contents
 
-</div>
+- [About the Project](#star2-about-the-project)
+  - [Tech Stack](#space_invader-tech-stack)
+  - [Features](#dart-features)
+  - [Environment Variables](#key-environment-variables)
+- [Getting Started](#toolbox-getting-started)
 
 # :notebook_with_decorative_cover: Table of Contents
 
