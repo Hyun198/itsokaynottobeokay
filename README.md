@@ -57,6 +57,7 @@ Removed sections:
 
 <!-- TechStack -->
 
+<div align="left">
 ### :space_invader: Tech Stack
 
 <details>
@@ -89,12 +90,12 @@ Removed sections:
 
 To run this project, you will need to add the following environment variables to your .env file
 
-example file => .env.local.example
+.env.local.example 참고해서 설정
 
-  <p>TMDB API KEY</p>
+- TMDB API KEY
   <strong>NEXT_PUBLIC_TMDB_API_KEY </strong>
-  <p>JSON_API_URL</p>
-  <strong>NEXT_PUBLIC_DB_API_URL</strong>
+- JSON_API_URL
+<strong>NEXT_PUBLIC_DB_API_URL</strong>
 <!-- Getting Started -->
 
 ## :toolbox: Getting Started
@@ -105,3 +106,5 @@ build
 npm run build
 start
 npm run start
+
+</div>
