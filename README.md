@@ -65,11 +65,20 @@ Removed sections:
 
 ### :space_invader: Tech Stack
 
-Client
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react" />
-Server
-<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next-js"/>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://nextjs.org/">Next.js</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://nestjs.com/">Nest.js</a></li>
+  </ul>
+</details>
 <!-- Features -->
 
 ### :dart: Features
