@@ -43,10 +43,9 @@ Removed sections:
 
 # :notebook_with_decorative_cover: Table of Contents
 
-- [About the Project](#star2-about-the-project)
-  - [Tech Stack](#space_invader-tech-stack)
-  - [Features](#dart-features)
-  - [Environment Variables](#key-environment-variables)
+- [Tech Stack](#space_invader-tech-stack)
+- [Features](#dart-features)
+- [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
 
 ## :star2: About the Project
@@ -78,6 +77,12 @@ Removed sections:
 
 ### :dart: Features
 
+<p>드라마 속 장소 정보 제공</p>
+<p>장소 추가, 삭제 기능</p>
+<p>반응형 웹 디자인</p>
+<p>TMDB API를 이용한 드라마 정보 제공</p>
+<p>데이터 관리 (json-server)</p>
+
 <!-- Env Variables -->
 
 ### :key: Environment Variables
@@ -86,6 +91,10 @@ To run this project, you will need to add the following environment variables to
 
 example file => .env.local.example
 
+  <p>TMDB API KEY</p>
+  <strong>NEXT_PUBLIC_TMDB_API_KEY </strong>
+  <p>JSON_API_URL</p>
+  <strong>NEXT_PUBLIC_DB_API_URL</strong>
 <!-- Getting Started -->
 
 ## :toolbox: Getting Started
