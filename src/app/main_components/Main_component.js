@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './Main_component.style.css';
 
 async function fetchDramaData() {
@@ -40,7 +41,7 @@ export default async function MainComponent() {
         <>
             <div className="main-info">
                 <h2>{infos.original_name}</h2>
-                <div className="detail-button">Detail</div>
+                <Link href={`/detail/${infos.id}`} className="detail-button">Detail</Link>
                 <p>{(infos.overview).split('. ').map((sentence, index) => (
                     <span key={index}>
                         {sentence}
