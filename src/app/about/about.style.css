@@ -1,0 +1,30 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-container div {
+    padding: 20px;
+}
+
+.about-container .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(143, 95, 31);
+}
+
+.about-container .theme {
+    font-size: 20px;
+    color: rgb(143, 95, 31);
+    font-weight: 700;
+}
+
+.about-container .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.5;
+}
