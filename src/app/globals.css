@@ -1,20 +1,29 @@
-nav ul {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+nav {
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
-    list-style: none;
-
+    padding: 15px;
+    background-color: antiquewhite;
 }
 
-nav ul li {
-    margin: 0 10px;
-
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #000;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.2s ease-in-out;
 }
+
+nav a:hover {
+    color: #c9c5c5f5;
+}
+
 
 .home-container {
     display: flex;
@@ -38,4 +47,5 @@ nav ul li a {
     height: 800px;
     border-radius: 10px;
     box-shadow: 2px 5px 5px black;
+    margin-bottom: 15px;
 }

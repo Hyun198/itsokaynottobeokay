@@ -14,22 +14,14 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body>
         <nav>
-          <ul>
-            <li>
-              <Link href="/">home</Link>
-            </li>
-            <li>
-              <Link href="/quiz">quiz</Link>
-            </li>
-            <li>
-              <Link href="/trip">trip</Link>
-            </li>
-            <li>
-              <Link href="/counsel">counsel</Link>
-            </li>
-          </ul>
+          <Link href="/">home</Link>
+          <Link href='/about'>about</Link>
+          <Link href="/trip">trip</Link>
+          <Link href="/ost">ost</Link>
+          <Link href="/counsel">counsel</Link>
         </nav>
         {children}
+
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import "./detail_id_style.css"
+
 export default async function Detail(props) {
     const id = props.params.id;
     const seasonId = 1;
@@ -13,23 +15,27 @@ export default async function Detail(props) {
 
     const response = await fetch(url, options);
     const result = await response.json();
-    console.log(result);
     const episodes = result.episodes;
 
     return (
         <>
-            detail page
+            <div className="episode-container">
+                <h2>에피소드</h2>
+                <ul>
+                    {episodes?.map((episode) => {
+                        return (
+                            <li key={episode.episode_number}>
+                                <img src={`https://media.themoviedb.org/t/p/w227_and_h127_bestv2/${episode.still_path}`} />
+                                <div>
+                                    <h3>{episode.name}</h3>
+                                    <p>{episode.overview}</p>
+                                </div>
 
-            <ul>
-                {episodes?.map((episode) => {
-                    return (
-                        <li key={episode.episode_number}>
-                            <h3>{episode.name}</h3>
-                        </li>
-                    );
-                })}
-            </ul>
-
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
         </>
     )
 }

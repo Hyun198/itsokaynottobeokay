@@ -26,7 +26,7 @@ export default function CreateLocation() {
                             location_img
                         })
                     }
-                    fetch(process.env.NEXT_PUBLIC_DB_API_URL + 'locations', options)
+                    fetch(process.env.NEXT_PUBLIC_DB_API_URL + '/locations', options)
                         .then(res => res.json())
                         .then(result => {
                             console.log(result);

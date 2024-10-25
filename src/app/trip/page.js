@@ -12,7 +12,7 @@ export default function Trip() {
         fetchLocations()
     }, [])
     const fetchLocations = async () => {
-        const response = await fetch(process.env.NEXT_PUBLIC_DB_API_URL + 'locations');
+        const response = await fetch(process.env.NEXT_PUBLIC_DB_API_URL + '/locations');
         const data = await response.json();
         setLocations(data);
     }

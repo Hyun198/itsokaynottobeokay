@@ -41,7 +41,7 @@ export default async function MainComponent() {
         <>
             <div className="main-info">
                 <h2>{infos.original_name}</h2>
-                <Link href={`/detail/${infos.id}`} className="detail-button">Detail</Link>
+                <Link href={`/detail/${infos.id}`} className="detail-button">Episodes</Link>
                 <p>{(infos.overview).split('. ').map((sentence, index) => (
                     <span key={index}>
                         {sentence}

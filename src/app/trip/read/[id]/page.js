@@ -1,7 +1,7 @@
 import './read.style.css'
 import { Delete } from '../../delete';
 export default async function Read(props) {
-    const response = await fetch(process.env.NEXT_PUBLIC_DB_API_URL + `locations/${props.params.id}`);
+    const response = await fetch(process.env.NEXT_PUBLIC_DB_API_URL + `/locations/${props.params.id}`);
     const location = await response.json();
 
 
