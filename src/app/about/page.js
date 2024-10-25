@@ -25,7 +25,7 @@ export default async function about() {
                 </div>
                 <div className="message">
                     {data[0].message.split(".").map((line) => (
-                        <p>{line}</p>
+                        <p style={{ padding: "10px 0" }}>{line}</p>
                     ))}
                 </div>
             </div>
