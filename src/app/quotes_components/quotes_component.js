@@ -1,7 +1,7 @@
 import "./quotes_component.style.css";
 
 export default async function QuotesComponent() {
-    const url = "http://localhost:9999/quotes";
+    const url = `${process.env.NEXT_PUBLIC_DB_API_URL}/quotes`;
     const response = await fetch(url, { cache: 'no-store' });
     const data = await response.json();
 
