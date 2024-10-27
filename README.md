@@ -1,21 +1,3 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.
-If you have any enhancements, then fork this project and create a pull request
-or just open an issue with the label "enhancement".
-
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-
-<!--
-This README is a slimmed down version of the original one.
-Removed sections:
-- Screenshots
-- Running Test
-- Deployment
-- FAQ
--->
-
 <div align="center">
 
   <h1>It's okay to be Not okay</h1>
@@ -23,6 +5,11 @@ Removed sections:
   
   <p>
     Next.js를 이용한 첫 프로젝트 입니다.
+
+<strong>Next.js를 사용한 이유</strong>
+
+  <p>=> 최신 웹 개발의 트렌드에 맞춰 Next.js 이해도가 필요하다고 느꼈고, 해당 프로젝트를 배포 했을때 
+  SEO에 유리한 점을 이용하여 해당 프로젝트의 노출을 좀 더 드러내고 싶었습니다.</p>
     <ul>
       - Server Component와 Client Component의 이해
       - App Router를 이용한 경로 처리 
