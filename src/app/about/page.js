@@ -19,7 +19,7 @@ export default async function about() {
                     ))}
 
                 </div>
-
+                <img src="https://poc-cf-image.cjenm.com/public/share/menumng/1675755583135995643307.jpg" />
                 <div className="theme">
                     # .{data[0].theme}
                 </div>
