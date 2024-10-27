@@ -14,8 +14,8 @@ export default async function about() {
                     # .{data[0].subtitle}
                 </div>
                 <div className="intro">
-                    {data[0].intro.split("\n").map((line) => (
-                        <p style={{ padding: "8px 0" }}>{line}</p>
+                    {data[0].intro.split("\n").map((line, index) => (
+                        <p key={index} style={{ padding: "8px 0" }}>{line}</p>
                     ))}
 
                 </div>
@@ -24,8 +24,8 @@ export default async function about() {
                     # .{data[0].theme}
                 </div>
                 <div className="message">
-                    {data[0].message.split(".").map((line) => (
-                        <p style={{ padding: "10px 0" }}>{line}</p>
+                    {data[0].message.split(" .").map((line, index) => (
+                        <p key={index} style={{ padding: "10px 0" }}>{line}</p>
                     ))}
                 </div>
             </div>
