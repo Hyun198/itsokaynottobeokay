@@ -1,0 +1,18 @@
+.play-list-container ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.play-list-container ul li {
+    width: 150px;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.play-list-container ul li img {
+    width: 150px;
+    height: 150px;
+}

@@ -1,7 +1,7 @@
 'use client';
 import axios from 'axios';
 import { useEffect, useState } from 'react'
-
+import './ost.style.css'
 export default function Page() {
 
     const client_Id = process.env.NEXT_PUBLIC_SPOTIFY_API_KEY;
@@ -34,26 +34,34 @@ export default function Page() {
             {
                 headers: { Authorization: "Bearer " + access_token },
                 params: {
-                    q: "사이코지만 괜찮아 OST",
-                    type: "playlist",
-                    limit: 1, // 첫 번째로 나온 플레이리스트만 가져옴
+                    q: "사이코지만 괜찮아",
+                    type: "album",
+                    limit: 5, // 첫 번째로 나온 플레이리스트만 가져옴
                 },
             }
         );
-        const playlistId = searchResponse.data.playlists.items[0].id;
+        const albums = searchResponse.data.albums.items;
 
-        // 2. 플레이리스트의 트랙 정보 가져오기
-        const playlistResponse = await axios.get(
-            `https://api.spotify.com/v1/playlists/${playlistId}/tracks`,
-            { headers: { Authorization: "Bearer " + access_token } }
-        );
+        let allTracks = [];
 
-        const trackList = playlistResponse.data.items.map((item) => ({
-            name: item.track.name,
-            artist: item.track.artists.map((artist) => artist.name).join(", "),
-            albumCover: item.track.album.images[0]?.url,
-        }))
-        setTracks(trackList); // 가져온 트랙을 상태로 설정
+        for (const album of albums) {
+            if (album.name.includes("OST") || album.name.includes("사이코지만 괜찮아")) {
+                const albumResponse = await axios.get(
+                    `https://api.spotify.com/v1/albums/${album.id}/tracks`,
+                    { headers: { Authorization: "Bearer " + access_token } }
+                );
+
+                const albumTracks = albumResponse.data.items.map((item) => ({
+                    name: item.name,
+                    artist: item.artists.map((artist) => artist.name).join(", "),
+                    albumCover: album.images ? album.images[0]?.url : album.images[0],
+                    albumName: album.name,
+                }));
+
+                allTracks = [...allTracks, ...albumTracks];
+            }
+        }
+        setTracks(allTracks);
     }
 
     useEffect(() => {
@@ -65,15 +73,20 @@ export default function Page() {
     }, [tracks]);
 
     return (
-        <div>
-            <h2>Playlist</h2>
+        <div className="play-list-container">
             <ul>
                 {tracks.map((track, index) => {
                     return (
                         <li key={index}>
                             <img src={track.albumCover} alt={track.name} />
+                            <div>
+                                <strong>{track.name}</strong>
+                            </div>
+                            <div>
+                                {track.artist}
+                            </div>
 
-                            <strong>{track.name}</strong>-{track.artist}</li>
+                        </li>
                     )
                 })}
             </ul>
