@@ -3,13 +3,15 @@
   <h1>It's okay to be Not okay</h1>
   <h2>사이코지만 괜찮아</h2>
   
-  <p>
+  <>
     Next.js를 이용한 첫 프로젝트 입니다.
 
 <strong>Next.js를 사용한 이유</strong>
 
   <p>=> 최신 웹 개발의 트렌드에 맞춰 Next.js 이해도가 필요하다고 느꼈고, 해당 프로젝트를 배포 했을때 
   SEO에 유리한 점을 이용하여 해당 프로젝트의 노출을 좀 더 드러내고 싶었습니다.</p>
+
+  <p>재밌게 본 드라마를 바탕으로 제작했습니다. <a href="https://tvn.cjenm.com/ko/tvnpsycho/">사이코지만 괜찮아</a></p>
     <ul>
       - Server Component와 Client Component의 이해
       - App Router를 이용한 경로 처리 

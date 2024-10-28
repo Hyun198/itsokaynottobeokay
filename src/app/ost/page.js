@@ -36,7 +36,7 @@ export default function Page() {
                 params: {
                     q: "사이코지만 괜찮아",
                     type: "album",
-                    limit: 5, // 첫 번째로 나온 플레이리스트만 가져옴
+                    limit: 1, // 첫 번째로 나온 플레이리스트만 가져옴
                 },
             }
         );
