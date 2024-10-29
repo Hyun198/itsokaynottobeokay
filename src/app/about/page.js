@@ -7,7 +7,6 @@ export default async function about() {
 
     return (
         <>
-            <h1>About page</h1>
             <div className="about-container">
                 #{data[0].title}
                 <div className="subtitle">

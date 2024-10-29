@@ -1,7 +1,17 @@
+.location-list h2 {
+    text-align: center;
+}
+
+
 .location-list ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.location-list ul a {
+    text-decoration: none;
+    color: black;
 }
 
 .location-list ul li {
@@ -12,10 +22,7 @@
 
 }
 
-.location-list ul li a {
-    text-decoration: none;
-    color: black;
-}
+
 
 .location-list ul li a:hover {
     color: grey;
@@ -30,4 +37,17 @@
 .location-list ul li img {
     width: 100%;
     height: 350px;
+}
+
+.location-list .location-list-button {
+    display: flex;
+    justify-content: center;
+}
+
+.location-list button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
