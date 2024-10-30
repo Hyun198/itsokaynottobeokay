@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import './ost.style.css'
+import SpotifyPlayerComponent from '../spotidysdk/SpotifyPlayerComponent';
 export default function Page() {
 
     const client_Id = process.env.NEXT_PUBLIC_SPOTIFY_API_KEY;
@@ -9,6 +10,8 @@ export default function Page() {
 
     const [tracks, setTracks] = useState([])
     const [backgroundImage, setBackgroundImage] = useState('./playerbg.jpg')
+    const [selected_TrackUri, setSelected_TrackUri] = useState(null)
+    const [access_token, setAccess_Token] = useState(null);
 
     async function getAccessToken() {
         const response = await axios.post(
@@ -23,11 +26,12 @@ export default function Page() {
                 },
             }
         );
-        return response.data.access_token;
+        setAccess_Token(response.data.access_token);
     }
 
+
     async function getPlaylistTracks() {
-        const access_token = await getAccessToken();
+        if (!access_token) return;
 
         // 1. '사이코지만 괜찮아' 관련 플레이리스트 검색
         const searchResponse = await axios.get(
@@ -66,15 +70,19 @@ export default function Page() {
     }
 
     useEffect(() => {
-        getPlaylistTracks();
-    }, [])
-    /* 
-        useEffect(() => {
-            console.log("tracks:", tracks)
-        }, [tracks]); */
+        getAccessToken();
+    }, []);
 
-    const handleAlbumClick = (albumCover) => {
+    useEffect(() => {
+        getPlaylistTracks();
+
+    }, [access_token]);
+
+
+
+    const handleAlbumClick = (albumCover, trackUri) => {
         setBackgroundImage(albumCover)
+        setSelected_TrackUri(trackUri)
     }
 
 
@@ -87,18 +95,27 @@ export default function Page() {
             <div className="play-list">
                 {tracks.map((track, index) => {
                     return (
-                        <div className="play-list-card" key={index} onClick={() => handleAlbumClick(track.albumCover)}>
+
+                        <div className="play-list-card" key={index} onClick={() => handleAlbumClick(track.albumCover, track.uri)}>
                             <img src={track.albumCover} alt={track.name} />
                             <div className="info">
                                 <strong>{track.name}</strong>
                                 {track.artist}
                             </div>
-
                         </div>
+
+
+
                     )
                 })}
 
             </div>
+
+            {access_token && (
+                <div className="player">
+                    <SpotifyPlayerComponent accessToken={access_token} selected_track={selected_TrackUri} />
+                </div>
+            )}
 
         </div>
     )
