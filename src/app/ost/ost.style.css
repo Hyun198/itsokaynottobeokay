@@ -32,21 +32,28 @@
 
 .play-list-container .play-list {
     width: 70%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #F7FAFC;
+
 }
 
 .play-list-container .play-list .play-list-card {
     display: flex;
-    height: 100px;
+    height: 80px;
     padding: 10px 10px;
     margin: 5px 0px;
     border-bottom: 0.5px solid grey;
-    transition: all 0.3s ease;
 }
 
-.play-list-container .play-list .play-list-card:hover {
-    scale: 1.1;
+.play-list-container .play-list .play-list-card .content {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.play-list-container .play-list .play-list-card:hover .content {
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -58,6 +65,6 @@
 }
 
 .play-list-container .play-list .play-list-card img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }

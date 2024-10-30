@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import './ost.style.css'
+import Player from '../../player/player'
 export default function Page() {
 
     const client_Id = process.env.NEXT_PUBLIC_SPOTIFY_API_KEY;
@@ -93,22 +94,19 @@ export default function Page() {
             <div className="play-list">
                 {tracks.map((track, index) => {
                     return (
-
                         <div className="play-list-card" key={index} onClick={() => handleAlbumClick(track.albumCover)}>
-                            <img src={track.albumCover} alt={track.name} />
-                            <div className="info">
-                                <strong>{track.name}</strong>
-                                {track.artist}
+                            <div className="content"> {/* 새로운 래퍼 추가 */}
+                                <img src={track.albumCover} alt={track.name} />
+                                <div className="info">
+                                    <strong>{track.name}</strong>
+                                    {track.artist}
+                                </div>
                             </div>
                         </div>
-
-
-
                     )
                 })}
-
             </div>
-
+            <Player />
 
 
         </div>
