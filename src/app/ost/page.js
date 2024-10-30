@@ -2,7 +2,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import './ost.style.css'
-import SpotifyPlayerComponent from '../spotidysdk/SpotifyPlayerComponent';
 export default function Page() {
 
     const client_Id = process.env.NEXT_PUBLIC_SPOTIFY_API_KEY;
@@ -10,7 +9,7 @@ export default function Page() {
 
     const [tracks, setTracks] = useState([])
     const [backgroundImage, setBackgroundImage] = useState('./playerbg.jpg')
-    const [selected_TrackUri, setSelected_TrackUri] = useState(null)
+
     const [access_token, setAccess_Token] = useState(null);
 
     async function getAccessToken() {
@@ -80,9 +79,8 @@ export default function Page() {
 
 
 
-    const handleAlbumClick = (albumCover, trackUri) => {
+    const handleAlbumClick = (albumCover) => {
         setBackgroundImage(albumCover)
-        setSelected_TrackUri(trackUri)
     }
 
 
@@ -96,7 +94,7 @@ export default function Page() {
                 {tracks.map((track, index) => {
                     return (
 
-                        <div className="play-list-card" key={index} onClick={() => handleAlbumClick(track.albumCover, track.uri)}>
+                        <div className="play-list-card" key={index} onClick={() => handleAlbumClick(track.albumCover)}>
                             <img src={track.albumCover} alt={track.name} />
                             <div className="info">
                                 <strong>{track.name}</strong>
@@ -111,11 +109,7 @@ export default function Page() {
 
             </div>
 
-            {access_token && (
-                <div className="player">
-                    <SpotifyPlayerComponent accessToken={access_token} selected_track={selected_TrackUri} />
-                </div>
-            )}
+
 
         </div>
     )
